@@ -1,2 +1,3 @@
+Vivado Simulator 2019.2
 Time resolution is 1 ps
-$stop called at time : 1160 ns : File "C:/Users/mehme/Documents/Lab9/MIPS_test.v" Line 57
+$stop called at time : 1160 ns : File "C:/Users/mehgul/LabVivado/Lab9_student/MIPS_test.v" Line 57

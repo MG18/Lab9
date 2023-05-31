@@ -1,13 +1,13 @@
-0.7
-2020.2
-May  7 2023
-15:24:31
-C:/Users/mehme/Documents/Lab9/ALU.v,1684961735,verilog,,C:/Users/mehme/Documents/Lab9/reg_half_synthmodel.v,,ALU,,,,,,,,
-C:/Users/mehme/Documents/Lab9/ControlUnit.v,1684954349,verilog,,C:/Users/mehme/Documents/Lab9/RegisterFile.v,,ControlUnit,,,,,,,,
-C:/Users/mehme/Documents/Lab9/DataMemory.v,1684954349,verilog,,C:/Users/mehme/Documents/Lab9/InstructionMemory.v,,DataMemory,,,,,,,,
-C:/Users/mehme/Documents/Lab9/InstructionMemory.v,1684954349,verilog,,C:/Users/mehme/Documents/Lab9/MIPS.v,,InstructionMemory,,,,,,,,
-C:/Users/mehme/Documents/Lab9/MIPS.v,1684960594,verilog,,C:/Users/mehme/Documents/Lab9/ControlUnit.v,,MIPS,,,,,,,,
-C:/Users/mehme/Documents/Lab9/MIPS_test.v,1684954349,verilog,,,,MIPS_test,,,,,,,,
-C:/Users/mehme/Documents/Lab9/RegisterFile.v,1684954349,verilog,,C:/Users/mehme/Documents/Lab9/ALU.v,,RegisterFile,,,,,,,,
-C:/Users/mehme/Documents/Lab9/lab_9.sim/sim_1/behav/xsim/glbl.v,1684954349,verilog,,,,glbl,,,,,,,,
-C:/Users/mehme/Documents/Lab9/reg_half_synthmodel.v,1684954349,verilog,,C:/Users/mehme/Documents/Lab9/MIPS_test.v,,reg_half;reg_half_dist_mem_gen_v4_1_xst_1,,,,,,,,
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/mehgul/LabVivado/Lab9_student/ALU.v,1685548578,verilog,,C:/Users/mehgul/LabVivado/Lab9_student/reg_half_synthmodel.v,,ALU,,,,,,,,
+C:/Users/mehgul/LabVivado/Lab9_student/ControlUnit.v,1643056060,verilog,,C:/Users/mehgul/LabVivado/Lab9_student/RegisterFile.v,,ControlUnit,,,,,,,,
+C:/Users/mehgul/LabVivado/Lab9_student/DataMemory.v,1643056060,verilog,,C:/Users/mehgul/LabVivado/Lab9_student/InstructionMemory.v,,DataMemory,,,,,,,,
+C:/Users/mehgul/LabVivado/Lab9_student/InstructionMemory.v,1643056060,verilog,,C:/Users/mehgul/LabVivado/Lab9_student/MIPS.v,,InstructionMemory,,,,,,,,
+C:/Users/mehgul/LabVivado/Lab9_student/MIPS.v,1685547650,verilog,,C:/Users/mehgul/LabVivado/Lab9_student/ControlUnit.v,,MIPS,,,,,,,,
+C:/Users/mehgul/LabVivado/Lab9_student/MIPS_test.v,1685543804,verilog,,,,MIPS_test,,,,,,,,
+C:/Users/mehgul/LabVivado/Lab9_student/RegisterFile.v,1643056060,verilog,,C:/Users/mehgul/LabVivado/Lab9_student/ALU.v,,RegisterFile,,,,,,,,
+C:/Users/mehgul/LabVivado/Lab9_student/lab_9.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/mehgul/LabVivado/Lab9_student/reg_half_synthmodel.v,1643056060,verilog,,C:/Users/mehgul/LabVivado/Lab9_student/MIPS_test.v,,reg_half;reg_half_dist_mem_gen_v4_1_xst_1,,,,,,,,

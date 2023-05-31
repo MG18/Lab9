@@ -68,7 +68,7 @@ module MIPS(
   wire        ALUSrc;    // 0: Register file, 1: Immediate value
   wire        RegDst;    // Destination Register 1: Instr[15:11] 0: Instr[20:15]
   wire        RegWrite;  // 1: We will write back to the RegisterFile
-  wire        ShAmt;     // Shift Amount
+  wire  [4:0] ShAmt;     // Shift Amount
 
 
 //////////////////////////////////////////////////////////////////////////////////

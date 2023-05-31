@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 31 17:01:46 2023
+# Process ID: 3100
+# Current directory: C:/Users/mehgul/LabVivado/Lab9_student/lab_9.runs/synth_1
+# Command line: vivado.exe -log MIPS.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MIPS.tcl
+# Log file: C:/Users/mehgul/LabVivado/Lab9_student/lab_9.runs/synth_1/MIPS.vds
+# Journal file: C:/Users/mehgul/LabVivado/Lab9_student/lab_9.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MIPS.tcl -notrace
+Command: synth_design -top MIPS -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 144 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 546.809 ; gain = 245.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MIPS' [C:/Users/mehgul/LabVivado/Lab9_student/MIPS.v:21]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [C:/Users/mehgul/LabVivado/Lab9_student/InstructionMemory.v:21]
+INFO: [Synth 8-3876] $readmem data file 'insmem_h.txt' is read successfully [C:/Users/mehgul/LabVivado/Lab9_student/InstructionMemory.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (1#1) [C:/Users/mehgul/LabVivado/Lab9_student/InstructionMemory.v:21]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [C:/Users/mehgul/LabVivado/Lab9_student/RegisterFile.v:21]
+INFO: [Synth 8-6157] synthesizing module 'reg_half' [C:/Users/mehgul/LabVivado/Lab9_student/reg_half_synthmodel.v:17]
+INFO: [Synth 8-6157] synthesizing module 'reg_half_dist_mem_gen_v4_1_xst_1' [C:/Users/mehgul/LabVivado/Lab9_student/reg_half_synthmodel.v:133]
+INFO: [Synth 8-6157] synthesizing module 'GND' [C:/Apps/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:14687]
+INFO: [Synth 8-6155] done synthesizing module 'GND' (2#1) [C:/Apps/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:14687]
+INFO: [Synth 8-6157] synthesizing module 'RAM32X1D' [C:/Apps/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:70440]
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter IS_WCLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'RAM32X1D' (3#1) [C:/Apps/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:70440]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [C:/Apps/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+	Parameter INIT bound to: 8'b11100100 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (4#1) [C:/Apps/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Apps/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (5#1) [C:/Apps/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [C:/Apps/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+	Parameter INIT bound to: 4'b0100 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (6#1) [C:/Apps/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [C:/Apps/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (6#1) [C:/Apps/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [C:/Apps/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:81656]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (7#1) [C:/Apps/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:81656]
+INFO: [Synth 8-6155] done synthesizing module 'reg_half_dist_mem_gen_v4_1_xst_1' (8#1) [C:/Users/mehgul/LabVivado/Lab9_student/reg_half_synthmodel.v:133]
+WARNING: [Synth 8-7023] instance 'BU2' of module 'reg_half_dist_mem_gen_v4_1_xst_1' has 18 connections declared, but only 16 given [C:/Users/mehgul/LabVivado/Lab9_student/reg_half_synthmodel.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'reg_half' (9#1) [C:/Users/mehgul/LabVivado/Lab9_student/reg_half_synthmodel.v:17]
+WARNING: [Synth 8-7023] instance 'i_portA' of module 'reg_half' has 7 connections declared, but only 6 given [C:/Users/mehgul/LabVivado/Lab9_student/RegisterFile.v:39]
+WARNING: [Synth 8-7023] instance 'i_portB' of module 'reg_half' has 7 connections declared, but only 6 given [C:/Users/mehgul/LabVivado/Lab9_student/RegisterFile.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (10#1) [C:/Users/mehgul/LabVivado/Lab9_student/RegisterFile.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/mehgul/LabVivado/Lab9_student/ALU.v:21]
+ERROR: [Synth 8-91] ambiguous clock in event control [C:/Users/mehgul/LabVivado/Lab9_student/ALU.v:70]
+ERROR: [Synth 8-6156] failed synthesizing module 'ALU' [C:/Users/mehgul/LabVivado/Lab9_student/ALU.v:21]
+ERROR: [Synth 8-6156] failed synthesizing module 'MIPS' [C:/Users/mehgul/LabVivado/Lab9_student/MIPS.v:21]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 621.523 ; gain = 320.617
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 3 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Wed May 31 17:01:57 2023...
