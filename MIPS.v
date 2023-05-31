@@ -50,13 +50,13 @@ module MIPS(
   // ALU related
   wire [31:0] SrcA;      // One input of the ALU
   wire [31:0] SrcB;      // Other input of the ALU
-  wire [63:0] ALUResult; // The output of the ALU
+  wire [31:0] ALUResult; // The output of the ALU
   wire        Zero;      // The Zero flag, 1: if ALUResult == 0 
 
   // Data Memory
   wire [31:0] WriteData; // The output of Register File port 2,
   wire [31:0] ReadData;  // Output of the Data Memory
-  wire [63:0] Result;    // End result that will be written back to register file
+  wire [31:0] Result;    // End result that will be written back to register file
   wire        MemWrite;  // Write Enable for the Memory
 
   // Control Signals
@@ -129,7 +129,7 @@ module MIPS(
     .reset(RESET),
     .a(SrcA),               // First ALU input, direct from register file
     .b(SrcB),               // Second ALU input, from the multiplexer
-    .aluop(ALUControl[3:0]),// ALU operation, at the moment only last 4 bits
+    .aluop(ALUControl[5:0]),// ALU operation, at the moment only last 4 bits
     .shamt(ShAmt),
     .result(ALUResult),     // 32-bit output
     .zero(Zero)             // The Zero flag

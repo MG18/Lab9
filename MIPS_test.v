@@ -32,7 +32,7 @@ module MIPS_test;
 	// These are not real inputs and outputs. They are here so that
 	// We can use a simple testbench to verify that the processor 
 	// is actually working.
-	wire [63:0] result;  // The "result" output of MIPS
+	wire [31:0] result;  // The "result" output of MIPS
 	wire [31:0] PC;      // The Program Counter from MIPS
 
 	reg         clk   ; // Test clock 

@@ -26,7 +26,7 @@ module ALU(
   input  [5:0] aluop,
   input [4:0] shamt,
   
-  output [63:0] result,
+  output [31:0] result,
   output zero
  );
   
@@ -38,8 +38,8 @@ module ALU(
   wire [31:0] slt;        // output of the slt extension
   
   wire [1:0] logicsel;    // lower two bits of aluop;
-  wire [63:0] otherout;
-  reg [63:0] lo;
+  wire [31:0] otherout;
+  reg [31:0] lo;
   
   // logic select 
   assign logicsel = aluop[1:0];
@@ -61,19 +61,26 @@ module ALU(
   
   // main out
   assign mainout = (aluop[2]) ? logicout : arithout;
-  // the zero
-  assign zero = (result == 32'b0) ? 1: 0;
+
 
   // multiply
   always @ (posedge clk, posedge reset)
     begin
+    if(reset)
+    lo = 0;
+    
+    if(aluop == 6'b011001)
     lo = a * b;
+    
     end
     
   
   // other out
   assign otherout = (aluop == 6'b000010) ? b >> shamt : lo;
   // final out
-  assign result = (aluop[4]) ? otherout : mainout;
+  assign result = (aluop == 6'b000010 || aluop == 6'b010010) ? otherout : mainout;
+  
+   // the zero
+  assign zero = (result == 32'b0) ? 1 : 0;
   
 endmodule
